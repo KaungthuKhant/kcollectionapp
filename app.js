@@ -26,6 +26,10 @@ app.get('/', (req, res)=>{
     res.send("We are on home");
 });
 
+app.get('/specific', (req, res)=>{
+    res.send("We are on specific");
+});
+
 // connect to DB
 mongoose.connect(process.env.DB_CONNECTION,{ useNewUrlParser: true}, () =>
     console.log('connected to DB')
