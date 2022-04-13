@@ -9,11 +9,11 @@ const Post = require('../models/Post');
 
 // this router gets back all the post
 // router.get('/', async (req, res)=>{
-router.get('/', (req, res)=>{
+router.get('/', async (req, res)=>{
     try{
         // Post is the const we created and find is a method of mongoose
         // if you give no parameter for find, it will return all
-        const posts = Post.find();
+        const posts = await Post.find();
         res.json(posts);
     }
     catch(err){
