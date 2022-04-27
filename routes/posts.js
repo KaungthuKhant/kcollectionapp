@@ -6,9 +6,6 @@ const Post = require('../models/Post');
 // we don't need /posts cause we call using /posts from app.js
 // so when it reaches this file, it is for /posts
 
-// test run
-
-
 
 // this router gets back all the post
 // router.get('/', async (req, res)=>{
